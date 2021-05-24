@@ -1,0 +1,152 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{cv,booktabs,fontawesome5}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+% Change color to blue
+\def\headcolor{\color[rgb]{0,0.3,0.5}}
+
+% Space before section headings
+\titlespacing{\section}{0pt}{2ex}{1ex}
+
+\name{Rudolf Schlechter}
+
+\info{\faIcon{map-marker-alt} & 4/589 Barbadoes street, \\
+                          &  Christchurch 8013, New Zealand\\
+      \faIcon{phone}      & +64 27 525 3637\\
+      \faIcon{envelope}   & roschlec@gmail.com\\
+      \faIcon{twitter}    & @rschlec\\
+      \faIcon{github}     & \href{http://www.github.com/roschlec}{github.com/roschlec}\\
+      \faIcon{orcid}      & \href{https://orcid.org/0000-0002-5717-2917}{0000-0002-5717-2917}\\
+      \faIcon{graduation-cap} & \href{https://scholar.google.com/citations{?}user=D3zhLzEAAAAJ{&}hl=en}{Google Scholar h-index = 9.0}\\
+      \faIcon{globe-americas} & Chilean and German}
+
+\bibliography{rjhpubs}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \step[fieldset=month, null]
+    }
+  }
+}
+
+% Use useprefix because of Ashton de Silva
+\ExecuteBibliographyOptions{useprefix=true}
+
+\usepackage[sfdefault,lf,t]{carlito}
+\renewcommand{\bibfont}{\normalfont\fontsize{10}{12.4}\sffamily}
+\usepackage{inconsolata}
+
+\makebibcategory{selected}{Selected refereed research papers}
+
+\addtocategory{books}{
+  MWH3,
+  expsmooth08,
+  fpp2,
+}
+
+\addtocategory{selected}{
+  YW93,
+  HDRF95,
+  HDR96,
+  HBG96,
+  HF96,
+  GHH97,
+  HKSG02,
+  HHF04,
+  HKOS05,
+  HK06,
+  HU07,
+  HB08,
+  HK08,
+  HS09,
+  HS10,
+  HF10,
+  hierarchical,
+  DHS11,
+  HBY13,
+  gefcom,
+  m3pca,
+  %hfts,
+  mint,
+  boostingar,
+  probhts,
+  bagginguncertainty,
+  forecastingsofa,
+  oddstream,
+  }
+
+
+
+\begin{document}
+\maketitle
+
+\section{Education and Qualifications}
+
+~\begin{tabular}{llll}
+2017- & Ph.D. \textit{Microbiology} & University of Canterbury & New Zealand\\
+& \multicolumn{3}{l}{\small\textcolor{black!70}{Thesis title: ``Diving factors of bacterial interactions and spatial patterns in the phyllosphere''}}\\
+& \multicolumn{3}{l}{\small\textcolor{black!70}{Senior Supervisor: Mitja Remus-Emsermann, PhD}}\\
+& \multicolumn{3}{l}{\small\textcolor{black!70}{Associate Supervisor: Prof. Emerita Paula Jameson, Matthew Stott, PhD}}\\
+2013-2014 & Licenciate \textit{Biochemistry} (M.Sc. equivalent) & Pontificia Universidad de Chile & Chile\\
+& \multicolumn{3}{l}{\small\textcolor{black!70}{Thesis title: ``Characterisation of the immune response conferred by the \textit{loci} RUN1 and REN1 in \textit{Vitis vinifera}}}\\
+& \multicolumn{3}{l}{\small\textcolor{black!70}{against \textit{Erysiphe necator}''}}\\
+& \multicolumn{3}{l}{\small\textcolor{black!70}{Senior Supervisor: Patricio Arce-Johnson, PhD}}\\
+2009-2013 & B.Sc. \textit{Biochemistry} & Pontificia Universidad de Chile & Chile
+\end{tabular}
+
+\section{Honours and awards}
+
+~\begin{tabular}{ll}
+%2017 & Visiting Expert Professor, Chinese Academy of Sciences, Beijing, China.\\
+2016 & KNAW Visiting Professor, TU/Eindhoven, Netherlands.\\
+2010 & Dean's Award for excellence in innovation and external collaboration, Monash University.\\
+2010 & HP Innovation Research Award.\\
+%2009--2010 & Entry in \emph{Great minds of the 21st century}, 1st--4th editions.\\
+2008 & Dean's award for excellence in research, Monash University.\\
+2008 & Vice-Chancellor's award for postgraduate supervisor of the year, Monash University.\\
+2007 & Knibbs Lecturer, Statistical Society of Australia (ACT branch).\\
+2007 & Moran Medal for Statistical Science, Australian Academy of Science.\\
+2006 & Belz Lecturer, Statistical Society of Australia (Victorian branch).
+\end{tabular}
+
+\section{Research}
+
+\begin{itemize}\parskip=0cm
+\item Since 1991 I have authored 195 papers, chapters or books on statistical topics. A list of selected publications appears on the following page.
+\item  My current research involves the analysis of large collections of time series, and includes visualization, forecasting, reconciliation and modelling. Applications include electricity demand and smart-meter data, security sensors, manufacturing data and retail sales.
+\item I currently supervise seven PhD students and three post-doctoral research fellows. I have previously supervised another 22 PhD students and 3 Masters students.
+\item I publish the \emph{Hyndsight} blog on research issues which receives an average of about 2000 pageviews per day.
+\item I have produced 39 R packages as a result of my research; 27 of them are on CRAN.
+\end{itemize}
+
+\section{Research income}
+
+I have acquired (in most cases jointly) about \$6.4 million in external research grants since 2000. I am currently a Chief Investigator for the Australian Centre of Excellence for Mathematical and Statistical Frontiers,  a Chief Investigator for two current ARC Linkage Grants, and I have research funding in 2019 from FaceBook Research and Advisian.
+
+\section{Advisory boards}
+
+%I am on several scientific advisory boards for external organizations:
+\begin{compactitem}
+\item
+  Member of the Scaling committee, Victorian Tertiary Admissions Centre (1994--). %This committee is responsible for producing the ATAR for VCE students.
+\item
+  Member of the ATAR Technical Group for the Australasian Conference of Tertiary Admissions Centres (2003--).
+\item
+  Member of the Indigenous Statistical and Information Advisory Group for the Australian Institute of Health and Welfare (2017--).
+\item
+  Member of the Methodology Advisory Committee for the Australian Bureau of Statistics (2010--2018).
+\end{compactitem}
+
+
+\enlargethispage*{0.9cm}
+
+\setlength{\bibitemsep}{1.8pt}
+
+\printbib{books}
+\printbib{selected}
+
+\end{document}
