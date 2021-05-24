@@ -7,7 +7,7 @@
 \usepackage{paralist,ragged2e,datetime}
 \usepackage[hyphens]{url}
 \usepackage{fancyhdr,enumitem,pifont}
-\usepackage[a4paper,text={17.5cm,25.5cm},centering]{geometry}
+\usepackage[a4paper,text={18cm,25.5cm},centering]{geometry}
 \usepackage[compact,small,sf,bf]{titlesec}
 \usepackage{kpfonts,dsfont}
 \usepackage{array}
@@ -40,12 +40,13 @@
 \shadebox[0.96]{17.2cm}{\sf\headcolor\hfil
 \hbox to 17cm{\begin{tabular}{P{7.4cm}}
 \\[-0.3cm]
-    \LARGE\textbf{\@name}\\[0.3cm]
     \Large{Curriculum Vitae}\\[0.6cm]
+    \LARGE\textbf{\@name} \normalsize{( he | him )}\\[0.2cm]
+    \Large{Ph.D. Candidate | Microbiologist}\\[0.4cm]
     \normalsize\today
 \end{tabular}
 \hfill\hbox{\fontsize{9}{12}\sf
-\begin{tabular}{@{}rP{7.5cm}@{}}
+\begin{tabular}{@{}rP{5cm}@{}}
 \@info
 \end{tabular}}}\hfil
 }
@@ -140,7 +141,7 @@
 
 % Make nicer bullets
 
-\renewcommand{\labelitemi}{\ding{228}}
+\renewcommand{\labelitemi}{\faAngleRight}
 
 \DeclareSortingScheme{ty}{
   \sort{
