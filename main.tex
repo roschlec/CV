@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{filecontents}
 
 % Change color to blue
 \def\headcolor{\color[rgb]{0,0.3,0.5}}
@@ -23,8 +24,6 @@
       \faIcon{graduation-cap} & \href{https://scholar.google.com/citations{?}user=D3zhLzEAAAAJ{&}hl=en}{Google Scholar (h-index = 9.0)}\\
       \faIcon{globe-americas} & Chilean and German}
 
-\bibliography{rjhpubs}
-
 \DeclareSourcemap{
   \maps[datatype=bibtex, overwrite]{
     \map{
@@ -40,45 +39,31 @@
 \renewcommand{\bibfont}{\normalfont\fontsize{10}{12.4}\sffamily}
 \usepackage{inconsolata}
 
-\makebibcategory{selected}{Selected refereed research papers}
 
-\addtocategory{books}{
-  MWH3,
-  expsmooth08,
-  fpp2,
-}
+\addbibresource{rspub.bib}
 
-\addtocategory{selected}{
-  YW93,
-  HDRF95,
-  HDR96,
-  HBG96,
-  HF96,
-  GHH97,
-  HKSG02,
-  HHF04,
-  HKOS05,
-  HK06,
-  HU07,
-  HB08,
-  HK08,
-  HS09,
-  HS10,
-  HF10,
-  hierarchical,
-  DHS11,
-  HBY13,
-  gefcom,
-  m3pca,
-  %hfts,
-  mint,
-  boostingar,
-  probhts,
-  bagginguncertainty,
-  forecastingsofa,
-  oddstream,
+
+\DeclareBibliographyCategory{Papers}
+\DeclareBibliographyCategory{Preprints}
+\DeclareBibliographyCategory{Books}
+
+\DeclareIndexFieldFormat{Books}{%
+  \ifstrequal{Books}{#1}
+  {\addtocategory{Books}{\thefield{entrykey}}}
+  {
+    \ifstrequal{Papers}{#1}
+    {\addtocategory{Papers}{\thefield{entrykey}}}
+    {
+      \ifstrequal{Preprints}{#1}
+      {\addtocategory{Preprints}{\thefield{entrykey}}}
+      {}
+    }
   }
+}
+\AtDataInput{\indexfield[Books]{annotation}}
 
+\DeclareNameAlias{sortname}{last-first}
+\renewcommand*{\finalnamedelim}{\multinamedelim}
 
 
 \begin{document}
@@ -86,9 +71,9 @@
 
 \section{Research}
 \begin{itemize}\parskip=0cm
-\item  My current research involves the analysis of large collections of time series, and includes visualization, forecasting, reconciliation and modelling. Applications include electricity demand and smart-meter data, security sensors, manufacturing data and retail sales.
-\item Since 2013, I have authored \textbf{12 peer-reviewed publications} and \textbf{2 book chapters} on topics related to plant biology and microbiology. My research has been cited \textbf{594} times and both my h-index and i10-index is \textbf{9.0}.
-\item I currently supervise two Masters students at University of Cantebury, New Zealand.
+\item  My current research interests involve mechanisms that drive microbial community assembly  in the phyllosphere. Combining culture-dependent techniques, molecular biology and genetics, fluorescence microscopy, spatial statistics, and macro- and microecological frameworks, I am interested in understanding bacterial interactions and their impact on microbial community structure and ecosystem functioning on plants.
+\item Since 2013, I have authored \textit{12 peer-reviewed publications} and \textit{2 book chapters} on topics related to plant biology and microbiology. My research has been cited \textit{594} times and both my h-index and i10-index is \textit{9.0}.
+\item I currently supervise two Masters students at University of Canterbury, New Zealand.
 \end{itemize}
 
 \section{Education and Qualifications}
@@ -96,30 +81,15 @@
 ~\begin{tabular}{p{1.7cm} p{6.3cm} p{4.5cm} p{3.5cm}} %
 
 2017-- & Ph.D. \textit{Microbiology} & University of Canterbury & New Zealand\\
-& \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Thesis title: ``Diving factors of bacterial interactions and spatial patterns in the phyllosphere''}}\\
-& \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Senior Supervisor: Mitja Remus-Emsermann, PhD. Associate Supervisor: Prof. Emerita Paula Jameson, Matthew Stott, PhD}}\\
+ & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Thesis title: ``Diving factors of bacterial interactions and spatial patterns in the phyllosphere''}}\\
+ & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Senior Supervisor: Prof. Mitja Remus-Emsermann. Associate Supervisor: Prof. Emerita Paula Jameson, Assoc. Prof. Matthew Stott}}\\
 
 2013--2014 & Licenciate \textit{Biochemistry} (M.Sc. equivalent) & Pontificia Universidad de Chile & Chile\\
-& \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Thesis title: ``Characterisation of the immune response conferred by the \textit{loci} RUN1 and REN1 in \textit{Vitis vinifera}}}\\
-& \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{against \textit{Erysiphe necator}''}}\\
-& \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Senior Supervisor: Patricio Arce-Johnson, PhD}}\\
+ & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Thesis title: ``Characterisation of the immune response conferred by the \textit{loci} RUN1 and REN1 in \textit{Vitis vinifera}}}\\
+ & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{against \textit{Erysiphe necator}''}}\\
+ & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Senior Supervisor: Prof. Patricio Arce-Johnson}}\\
 
 2009--2013 & B.Sc. \textit{Biochemistry} & Pontificia Universidad de Chile & Chile
-\end{tabular}
-
-\section{Honours and awards}
-
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
-
-2019 & Travel grant - New Zealand Microbiological Society (NZMS) Conference\\
-
-2018 & 3$^{rd}$ Place Student Poster Presentation Competition. NZMS-NZSBMB Joint Annual Conference. University of Otago, Dunedin, New Zealand\\
-
-2017--2021 & New Zealand International Doctoral Research Scholarship. Education New Zealand (ENZ), New Zealand\\
-
-2017 & UC College of Science PhD Scholarship. University of Canterbury, New Zealand\\
-
-2011-2013 & Honour Scholarship for excellent academic performance. Pontificia Universidad Católica de Chile, Chile\\
 \end{tabular}
 
 \section{Research and Teaching Experience}
@@ -149,12 +119,70 @@
 
 \end{tabular}
 
-\enlargethispage*{0.9cm}
+\section{Honours and Awards}
 
-\setlength{\bibitemsep}{1.8pt}
+~\begin{tabular}{p{1.7cm} p{14.3cm}}
+2019 & Travel grant - New Zealand Microbiological Society (NZMS) Conference\\
+2018 & Third Place Student Poster Presentation Competition. NZMS-NZSBMB Joint Annual Conference. University of Otago, Dunedin, New Zealand\\
+2017--2021 & New Zealand International Doctoral Research Scholarship. Education New Zealand (ENZ), New Zealand\\
+2017 & UC College of Science PhD Scholarship. University of Canterbury, New Zealand\\
+2011-2013 & Honour Scholarship for excellent academic performance. Pontificia Universidad Católica de Chile, Chile\\
+\end{tabular}
 
-\printbib{selected}
+\section{Publications}
 
-\printbib{books}
+\printbibliography[category=Preprints, title = {Pre-prints}]
+\printbibliography[category=Papers, title = {Peer-reviewed Papers}]
+* Equal contribution
+\printbibliography[category=Books, title = {Book Chapters}]
+
+\section{Conference Participation}
+~\begin{tabular}{p{1.7cm} p{14.3cm}}
+2020 &  \textbf{Oral presentation}, New Zealand Microbiology Society (NZMS) Online Conference, New Zealand\\
+     & \textbf{Oral presentation}, \textit{VI} New Zealand Microbial Ecology Consortium Meeting (NZMEC), Auckland, New Zealand\\
+2019 & \textbf{Oral presentation}, NZMS Annual Conference, Palmerston North, New Zealand\\
+     & \textbf{Oral presentation}, \textit{VIII} Canterbury Omics Symposium, Christchurch, New Zealand\\
+2018 & \textbf{Poster presentation}, NZMS-NZSBMB Joint Annual Conference, Dunedin, New Zealand\\
+     & \textbf{Oral presentation}, \textit{VII} Canterbury Omics Symposium, Christchurch, New Zealand\\
+     & \textbf{Poster presentation}, \textit{V} NZMEC, Auckland, New Zealand\\
+Pre-2018 & \textbf{Poster presentation}, \textit{IX} D-BIOL ETHZ Symposium, Davos, Switzerland \textbf{(2016)}\\
+     & \textbf{Oral presentation}, \textit{IX} Plant Biology Annual Conference, La Serena, Chile \textbf{(2014)}\\
+     & \textbf{Poster presentation}, \textit{XII} Panamerican Association for Biochemistry and Molecular Biology Congress, Puerto Varas, Chile \textbf{(2013)} \\
+     & \textbf{Poster presentation}, \textit{IX} International Symposium of Grapevine Physiology and Biotechnology, La Serena, Chile \textbf{(2013)}\\
+
+\end{tabular}
+
+\section{Academic Services and Others}
+\subsection{Research Grants}
+~\begin{tabular}{p{1.7cm} p{14.3cm}}
+2019     &  Bioprotection Core New Initiative Fund (25,200 NZD), Associate Investigator\\
+\end{tabular}
+
+\subsection{Peer Review}
+~\begin{tabular}{p{1.7cm} p{14.3cm}}
+2020     &  Phytobiomes\\
+     & Basic and Applied Ecology\\
+2019 & AMB Express\\
+\end{tabular}
+
+\subsection{Languages}
+~\begin{tabular}{p{1.7cm} p{14.3cm}}
+Spanish     & Native proficiency\\
+English     & Professional proficiency (C1 -- TOEFL score: 110, 2017)\\
+German      & A2
+\end{tabular}
+
+\section{References}
+
+~\begin{tabular}{p{7.5cm} p{5cm} p{4cm}}
+\multicolumn{3}{p{16.5cm}}{Prof. Mitja Remus-Emsermann, Ph.D.}\\
+\small\textcolor{black!70}{\faIcon{university} Freie Universität Berlin, Berlin, Germany} & \small\textcolor{black!70}{\faIcon{envelope} m.remus-emsermann@fu-berlin.de} & \small\textcolor{black!70}{\faIcon{phone} +49 30 838 58031}\\ \\
+
+\multicolumn{3}{p{16.5cm}}{Prof. Emerita Paula Jameson, Ph.D.}\\
+\small\textcolor{black!70}{\faIcon{university} University of Canterbury, Christchurch, New Zealand} & \small\textcolor{black!70}{\faIcon{envelope} paula.jameson@canterbury.ac.nz} & \small\textcolor{black!70}{\faIcon{phone} +64 33 69 5181}\\ \\
+
+\multicolumn{3}{p{16.5cm}}{Assoc. Prof. Matthew Stott, Ph.D.}\\
+\small\textcolor{black!70}{\faIcon{university} University of Canterbury, Christchurch, New Zealand} & \small\textcolor{black!70}{\faIcon{envelope} matthew.stott@canterbury.ac.nz} & \small\textcolor{black!70}{\faIcon{phone} +64 33 69 2511}\\
+\end{tabular}
 
 \end{document}
