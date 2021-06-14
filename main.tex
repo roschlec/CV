@@ -3,8 +3,13 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{filecontents}
+\usepackage{longtable}
+
+\LTpre=\smallskipamount
+\LTpost=\smallskipamount
+\LTleft=0pt % irrelevant, except it makes it easier to see the different spacing
 
 % Change color to blue
 \def\headcolor{\color[rgb]{0,0.3,0.5}}
@@ -21,7 +26,7 @@
       \faIcon{twitter}    & @rschlec\\
       \faIcon{github}     & \href{http://www.github.com/roschlec}{github.com/roschlec}\\
       \faIcon{orcid}      & \href{https://orcid.org/0000-0002-5717-2917}{0000-0002-5717-2917}\\
-      \faIcon{graduation-cap} & \href{https://scholar.google.com/citations{?}user=D3zhLzEAAAAJ{&}hl=en}{Google Scholar (h-index = 9.0)}\\
+      \faIcon{graduation-cap} & \href{https://scholar.google.com/citations{?}user=D3zhLzEAAAAJ{&}hl=en}{Google Scholar (\textit{h}-index = 9.0)}\\
       \faIcon{globe-americas} & Chilean and German}
 
 \DeclareSourcemap{
@@ -69,65 +74,111 @@
 \begin{document}
 \maketitle
 
-\section{Research}
+\section{Research Interest}
 \begin{itemize}\parskip=0cm
-\item  My current research interests involve mechanisms that drive microbial community assembly  in the phyllosphere. Combining culture-dependent techniques, molecular biology and genetics, fluorescence microscopy, spatial statistics, and macro- and microecological frameworks, I am interested in understanding bacterial interactions and their impact on microbial community structure and ecosystem functioning on plants.
-\item Since 2013, I have authored \textit{12 peer-reviewed publications} and \textit{2 book chapters} on topics related to plant biology and microbiology. My research has been cited \textit{594} times and both my h-index and i10-index is \textit{9.0}.
-\item I currently supervise two Masters students at University of Canterbury, New Zealand.
+\item  My current research interests involve mechanisms that drive microbial community assembly in the phyllosphere. Combining culture-dependent techniques, molecular biology and genetics, fluorescence microscopy, spatial statistics, and macro- and microecological frameworks, I am interested in understanding bacterial interactions and their impact on microbial community structure and ecosystem functioning on plants.
+\item Since 2013, I co-authored 12 peer-reviewed publications and 2 book chapters on topics related to plant biology
+and microbiology. My research has been cited 602 times and both my h-index and i10-index are 9.0.
 \end{itemize}
 
-\section{Education and Qualifications}
+\section{Education}
+~\begin{tabular}{p{3cm} p{14cm}} %
 
-~\begin{tabular}{p{1.7cm} p{6.3cm} p{4.5cm} p{3.5cm}} %
+2017--Present & \textbf{University of Canterbury, Ph.D.} \textit{Microbiology}\\
+ & {\small\textcolor{black!80}{Thesis: ``Driving factors of bacterial interactions and spatial patterns in the phyllosphere''}}\\
+ & {\small\textcolor{black!80}{Senior Supervisor: Prof. M. Remus-Emsermann. Associate Supervisors: Prof. Emerita P. Jameson, Assoc. Prof. M. Stott}}\\
 
-2017-- & Ph.D. \textit{Microbiology} & University of Canterbury & New Zealand\\
- & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Thesis title: ``Diving factors of bacterial interactions and spatial patterns in the phyllosphere''}}\\
- & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Senior Supervisor: Prof. Mitja Remus-Emsermann. Associate Supervisor: Prof. Emerita Paula Jameson, Assoc. Prof. Matthew Stott}}\\
+2013--2014 & \textbf{Pontificia Universidad de Chile, Licenciate} \textit{Biochemistry} (M.Sc. equivalent)\\
+ & {\small\textcolor{black!80}{Thesis: ``Characterisation of the immune response conferred by the \textit{loci} \textit{RUN1} and \textit{REN1} in \textit{Vitis vinifera} against \textit{Erysiphe necator}''}}\\
+ & {\small\textcolor{black!80}{Senior Supervisor: Prof. P. Arce-Johnson}}\\
 
-2013--2014 & Licenciate \textit{Biochemistry} (M.Sc. equivalent) & Pontificia Universidad de Chile & Chile\\
- & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Thesis title: ``Characterisation of the immune response conferred by the \textit{loci} RUN1 and REN1 in \textit{Vitis vinifera}}}\\
- & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{against \textit{Erysiphe necator}''}}\\
- & \multicolumn{3}{p{14.3cm}}{\small\textcolor{black!70}{Senior Supervisor: Prof. Patricio Arce-Johnson}}\\
-
-2009--2013 & B.Sc. \textit{Biochemistry} & Pontificia Universidad de Chile & Chile
+2009--2013 & \textbf{Pontificia Universidad de Chile, B.Sc.} \textit{Biochemistry}
 \end{tabular}
 
-\section{Research and Teaching Experience}
+\section{Research Experience}
+~\begin{longtable}{p{3cm} p{14cm}}
+May 2017-Present & \textbf{University of Canterbury, Remus-Emsermann Lab}, Ph.D. student\\
+& -- {\small\textcolor{black!80}{\textit{Bacterial genetic modification}: Development of a genetic toolbox for the stable labelling of \textit{Proteobacteria} with fluorescent proteins}}\\
+& -- {\small\textcolor{black!80}{\textit{Genomics}: Reconstruction and analysis of genome-scale metabolic models to study metabolic relationships between phyllosphere bacteria}}\\
+& -- {\small\textcolor{black!80}{\textit{Factors driving species interactions and spatial distribution patterns}: Combination of \textit{in vitro} and \textit{in planta} experiments with fluorescence microscopy and spatial statistics to determine the influence of resource overlap and phylogenetic relationships in interactions and spatial patterns between competing bacteria in the \textit{Arabidopsis thaliana} phyllosphere}}\\
+& -- {\small\textcolor{black!80}{\textit{Single-cell bioreporters}: Use of CUSPER bioreporter in \textit{Pantoea eucalypti} 299R to estimate the effect of resource competition in single-cell bacterial fitness in the phyllosphere}}\\
 
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
+Jan 2017--Apr 2017 & \textbf{Pontificia Universidad Católica de Chile, Arce-Johnson Lab}, Research Assistant\\
+& -- {\small\textcolor{black!80}{\textit{Plant-pathogen interactions}: Gene expression analysis of grapevine response to the infection of powdery mildew}}\\
+& -- {\small\textcolor{black!80}{\textit{Capillary electrophoresis}: Establishment and standardisation of DNA Genetic Analyser instrument for DNA fragment analysis through capillary electrophoresis}}\\
 
-2020--2021 & Lab Supervisor\\
-& \small\textcolor{black!70}{Daily supervision of summer intern, Evan Kear}\\
-2020-- & Thesis Co-supervisor\\
-& \small\textcolor{black!70}{Supervision of Masters project of Christian Stocks}\\
-2020 & Demonstrator (Teaching assistant)\\
-& \small\textcolor{black!70}{BIOL313: Advanced Microbiology. School of Biological Sciences, University of Canterbury, New Zealand}\\
-2019 & Lab Supervisor\\
-& \small\textcolor{black!70}{Daily supervision of summer intern, Christian Stocks}\\
-2019 & Demonstrator (Teaching assistant)\\
-& \small\textcolor{black!70}{BIOL313: Advanced Microbiology. School of Biological Sciences, University of Canterbury, New Zealand}\\
-2018 & Lab Instructor\\
-& \small\textcolor{black!70}{ENCH281: Biology for Engineers. School of Biological Sciences, University of Canterbury, New Zealand}\\
-2017 & Demonstrator (Teaching assistant)\\
-& \small\textcolor{black!70}{BIOL213: Microbiology and Genetics. School of Biological Sciences, University of Canterbury, New Zealand}\\
-2017 & Research Assistant\\
-& \small\textcolor{black!70}{Faculty of Biological Sciences, Pontificia Universidad Católica de Chile, Chile}\\
-2015--2016 & Research Assistant\\
-& \small\textcolor{black!70}{Department of Biology, ETH Zurich, Switzerland}\\
-2014--2015 & Research Assistant\\
-& \small\textcolor{black!70}{AgriJohnson Ltd., Santiago, Chile}\\
+Oct 2015--Oct 2016 & \textbf{ETH, Plant Cell Biology Group}, Research Assistant\\
+& -- {\small\textcolor{black!80}{\textit{Role of endocytosis in plant-pathogen interactions}: Live-cell imaging of \textit{Arabidopsis thaliana} root endocytic and vesicular trafficking response against \textit{Fusarium oxysporum}}}\\
+& -- {\small\textcolor{black!80}{\textit{Calcium imaging}: Live-cell imaging of calcium dynamics in arabidopsis roots with the fluorescent biosensor R-GECO1 and the microfluidic platform RootChip. \textit{Visiting scholar at COS, University of Heidelberg. Schumacher and Grossmann Lab}}}\\
 
-\end{tabular}
+Apr 2014--Feb 2015 & \textbf{AgriJohnson Ltd.}, Research Assistant\\
+& -- {\small\textcolor{black!80}{\textit{Grapevine virus detection platform}: Development of a simultaneous detection of grapevine viruses in \textit{Vitis vinifera} through multiplex PCR}}\\
+& -- {\small\textcolor{black!80}{\textit{Tissue culture}: Establishment of virus-free commercially-relevant grapevine cultivars through plant tissue culture techniques}}\\
 
-\section{Honours and Awards}
+Jan 2013--May 2014 & \textbf{Pontificia Universidad Católica de Chile, Arce-Johnson Lab}, M.Sc. student\\
+& -- {\small\textcolor{black!80}{\textit{Selection of resistant grapevine genotypes}: Use of molecular markers to select for grapevine individuals that carry the resistant \textit{loci} \textit{RUN1} and \textit{REN1}}}\\
+Jan 2013--May 2014 & -- {\small\textcolor{black!80}{\textit{Cellular and molecular immune responses of resistant and susceptible grapevine varieties against powdery mildew}: The response of grapevine plants carrying the \textit{loci} \textit{RUN1} and/or \textit{REN1} were evaluated upon inoculation with the powdery mildew. Plants carrying both \textit{loci} were associated with the suppression of fungal spore germination and an increased expression of a gene related to stilbene biosynthesis, which is involved in plant biotic stress responses}}\\
+\end{longtable}
 
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
+\section{Academic Experience}
+
+\subsection{Honours and Awards}
+
+~\begin{tabular}{p{3cm} p{14cm}}
 2019 & Travel grant - New Zealand Microbiological Society (NZMS) Conference\\
 2018 & Third Place Student Poster Presentation Competition. NZMS-NZSBMB Joint Annual Conference. University of Otago, Dunedin, New Zealand\\
 2017--2021 & New Zealand International Doctoral Research Scholarship. Education New Zealand (ENZ), New Zealand\\
 2017 & UC College of Science PhD Scholarship. University of Canterbury, New Zealand\\
 2011-2013 & Honour Scholarship for excellent academic performance. Pontificia Universidad Católica de Chile, Chile\\
 \end{tabular}
+
+\subsection{Teaching}
+~\begin{tabular}{p{3cm} p{14cm}}
+Semester 2 2021    & \textbf{University of Canterbury}, Guest Lecturer\\
+& \small\textcolor{black!80}{BIOL313: Advanced Microbiology}\\
+
+Semester 2 2020 & \textbf{University of Canterbury}, Demonstrator (Teaching assistant)\\
+& \small\textcolor{black!80}{BIOL313: Advanced Microbiology}\\
+
+Semester 2 2019 & \textbf{University of Canterbury}, Demonstrator (Teaching assistant)\\
+& \small\textcolor{black!80}{BIOL313: Advanced Microbiology}\\
+Semester 2 2018 & \textbf{ University of Canterbury}, Lab Instructor\\
+& \small\textcolor{black!80}{ENCH281: Biology for Engineers}\\
+Semester 2 2017 & \textbf{University of Canterbury}, Demonstrator (Teaching assistant)\\
+& \small\textcolor{black!80}{BIOL213: Microbiology and Genetics}\\
+Semester 1 2016 & \textbf{ETH}, Teaching assistant\\
+& \small\textcolor{black!80}{551-0104-00L: Fundamentals of Biology II, Plant Physiology}\\
+Semester 1 2014 & \textbf{Pontificia Universidad Católica de Chile}, Teaching assistant\\
+& \small\textcolor{black!80}{BIO225C: Plant Physiology and Biochemistry}\\
+& \small\textcolor{black!80}{BIO364C: Industrial Biotechnology}\\
+Semester 2 2013 & \textbf{Pontificia Universidad Católica de Chile}, Teaching assistant\\
+& \small\textcolor{black!80}{BIO266E: Laboratory of Biochemistry II: Molecular Genetics}\\
+Semester 1 2013 & \textbf{Pontificia Universidad Católica de Chile}, Teaching assistant\\
+& \small\textcolor{black!80}{BIO257C: Biochemistry}\\
+& \small\textcolor{black!80}{BIO225C: Plant Physiology and Biochemistry}\\
+Semester 1 2012 & \textbf{Pontificia Universidad Católica de Chile}, Teaching assistant\\
+& \small\textcolor{black!80}{BIO257C: Biochemistry}\\
+\end{tabular}
+
+\subsection{Supervision}
+~\begin{tabular}{p{3cm} p{14cm}}
+2020--Present & Christian Stocks, M.Sc. student, Remus-Emsermann Lab, University of Canterbury (Co-supervision)\\
+2020--2021 & Evan Kear, Undergraduate summer intern, Remus-Emsermann Lab, University of Canterbury\\
+2019 & Christian Stocks, Undergraduate summer intern, Remus-Emsermann Lab, University of Canterbury\\
+2016 & Michael Schl\"afli, Semester project student, Plant Cell Biology Group, ETH\\
+2014 & Diego Bustos, Semester project student, Arce-Johnsoh Lab, Pontificia Universidad Católica de Chile
+\end{tabular}
+
+\subsection{Participation in Funded Projects}
+~\begin{tabular}{p{3cm} p{14cm}}
+2019--Present     &  \textbf{Bioprotection Core New Initiative Fund}, Associate Investigator\\
+2017--Present     &  \textbf{Marsden Fast-Start Grant, Royal Society of New Zealand}, Ph.D. student\\
+Apr 2014--Feb 2015     &  \textbf{Fundación para la Innovación Agraria}, Research Assistant\\
+Jan 2013--May 2014     &  \textbf{Consorcio Tecnológico de la Fruta, ASOEX and Pontificia Universidad Católica de Chile}, Research student\\
+\end{tabular}
+
+\subsection{Reviewer Activity}
+Phytobiomes, Basic and Applied Ecology, AMB Express
 
 \section{Publications}
 
@@ -137,52 +188,47 @@
 \printbibliography[category=Books, title = {Book Chapters}]
 
 \section{Conference Participation}
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
+~\begin{tabular}{p{3cm} p{14cm}}
 2020 &  \textbf{Oral presentation}, New Zealand Microbiology Society (NZMS) Online Conference, New Zealand\\
-     & \textbf{Oral presentation}, \textit{VI} New Zealand Microbial Ecology Consortium Meeting (NZMEC), Auckland, New Zealand\\
+     & \textbf{Oral presentation}, New Zealand Microbial Ecology Consortium Meeting (NZMEC) 6.0, Auckland, New Zealand\\
 2019 & \textbf{Oral presentation}, NZMS Annual Conference, Palmerston North, New Zealand\\
-     & \textbf{Oral presentation}, \textit{VIII} Canterbury Omics Symposium, Christchurch, New Zealand\\
+     & \textbf{Oral presentation}, Canterbury Omics Symposium VIII, Christchurch, New Zealand\\
 2018 & \textbf{Poster presentation}, NZMS-NZSBMB Joint Annual Conference, Dunedin, New Zealand\\
-     & \textbf{Oral presentation}, \textit{VII} Canterbury Omics Symposium, Christchurch, New Zealand\\
-     & \textbf{Poster presentation}, \textit{V} NZMEC, Auckland, New Zealand\\
-Pre-2018 & \textbf{Poster presentation}, \textit{IX} D-BIOL ETHZ Symposium, Davos, Switzerland \textbf{(2016)}\\
-     & \textbf{Oral presentation}, \textit{IX} Plant Biology Annual Conference, La Serena, Chile \textbf{(2014)}\\
-     & \textbf{Poster presentation}, \textit{XII} Panamerican Association for Biochemistry and Molecular Biology Congress, Puerto Varas, Chile \textbf{(2013)} \\
-     & \textbf{Poster presentation}, \textit{IX} International Symposium of Grapevine Physiology and Biotechnology, La Serena, Chile \textbf{(2013)}\\
+     & \textbf{Oral presentation}, Canterbury Omics Symposium VII, Christchurch, New Zealand\\
+     & \textbf{Poster presentation}, NZMEC5.0, Auckland, New Zealand\\
+Pre-2018 & \textbf{Poster presentation}, D-BIOL ETHZ Symposium IX, Davos, Switzerland \textbf{(2016)}\\
+     & \textbf{Oral presentation}, Plant Biology Annual Conference IX, La Serena, Chile \textbf{(2014)}\\
+     & \textbf{Poster presentation}, Panamerican Association for Biochemistry and Molecular Biology Congress XII, Puerto Varas, Chile \textbf{(2013)} \\
+     & \textbf{Poster presentation}, International Symposium of Grapevine Physiology and Biotechnology IX, La Serena, Chile \textbf{(2013)}\\
 
 \end{tabular}
 
-\section{Academic Services and Others}
-\subsection{Research Grants}
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
-2019     &  Bioprotection Core New Initiative Fund (25,200 NZD), Associate Investigator\\
+\section{Technical Skills}
+~\begin{tabular}{p{3cm} p{14cm}}
+Programming     & R, Unix, \LaTeX\\
+Imaging Processing & Photoshop, Illustrator, FIJI/ImageJ\\
+Spatial statistics  & DAIME\\
+Microscopy & Fluorescence, Confocal (Laser Scanning, Spinning Disk) Microscopy
 \end{tabular}
 
-\subsection{Peer Review}
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
-2020     &  Phytobiomes\\
-     & Basic and Applied Ecology\\
-2019 & AMB Express\\
-\end{tabular}
-
-\subsection{Languages}
-~\begin{tabular}{p{1.7cm} p{14.3cm}}
+\section{Languages}
+~\begin{tabular}{p{3cm} p{14cm}}
 Spanish     & Native proficiency\\
-English     & Professional proficiency (C1 -- TOEFL score: 110, 2017)\\
-German      & A2
+English     & Professional proficiency (C1 --- TOEFL score: 110, 2017)\\
+German      & Basic proficiency (A2)
 \end{tabular}
 
 \section{References}
 
 ~\begin{tabular}{p{7.5cm} p{5cm} p{4cm}}
 \multicolumn{3}{p{16.5cm}}{Prof. Mitja Remus-Emsermann, Ph.D.}\\
-\small\textcolor{black!70}{\faIcon{university} Freie Universität Berlin, Berlin, Germany} & \small\textcolor{black!70}{\faIcon{envelope} m.remus-emsermann@fu-berlin.de} & \small\textcolor{black!70}{\faIcon{phone} +49 30 838 58031}\\ \\
+\small\textcolor{black!80}{\faIcon{university} Freie Universität Berlin, Berlin, Germany} & \small\textcolor{black!80}{\faIcon{envelope} m.remus-emsermann@fu-berlin.de} & \small\textcolor{black!80}{\faIcon{phone} +49 30 838 58031}\\ \\
 
-\multicolumn{3}{p{16.5cm}}{Prof. Emerita Paula Jameson, Ph.D.}\\
-\small\textcolor{black!70}{\faIcon{university} University of Canterbury, Christchurch, New Zealand} & \small\textcolor{black!70}{\faIcon{envelope} paula.jameson@canterbury.ac.nz} & \small\textcolor{black!70}{\faIcon{phone} +64 33 69 5181}\\ \\
+\multicolumn{3}{p{16.5cm}}{Prof. Emerita Paula Jameson, ONZM, Ph.D.}\\
+\small\textcolor{black!80}{\faIcon{university} University of Canterbury, Christchurch, New Zealand} & \small\textcolor{black!80}{\faIcon{envelope} paula.jameson@canterbury.ac.nz} & \small\textcolor{black!80}{\faIcon{phone} +64 33 69 5181}\\ \\
 
 \multicolumn{3}{p{16.5cm}}{Assoc. Prof. Matthew Stott, Ph.D.}\\
-\small\textcolor{black!70}{\faIcon{university} University of Canterbury, Christchurch, New Zealand} & \small\textcolor{black!70}{\faIcon{envelope} matthew.stott@canterbury.ac.nz} & \small\textcolor{black!70}{\faIcon{phone} +64 33 69 2511}\\
+\small\textcolor{black!80}{\faIcon{university} University of Canterbury, Christchurch, New Zealand} & \small\textcolor{black!80}{\faIcon{envelope} matthew.stott@canterbury.ac.nz} & \small\textcolor{black!80}{\faIcon{phone} +64 33 69 2511}\\
 \end{tabular}
 
 \end{document}
